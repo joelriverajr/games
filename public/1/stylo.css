@@ -1,0 +1,192 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#principal {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #002f87; /* Asegura que no hay color de fondo que interfiera */
+  
+}
+
+#temporizador {
+    position: fixed;
+    top: 1%;
+    right: 5%;
+    font-size: 3em;
+    padding: 10px;
+    color: rgb(138, 138, 142);
+}
+#ganadores{
+
+    color: black;
+    text-align: center;
+    line-height: 100px;
+    transform-origin: top right;
+    transform: scaleX(0) scaleY(0);
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    top: 14%;
+    right: 5%;
+    width: 65%;
+    height: 74%;
+    border-radius: 3%;
+    background-color: #002f87  
+}
+#quinela{
+position: relative;
+width: 90%;
+height: 25%;
+top: 5%;
+left: 5%;
+border-radius: 10px;
+background-color: #BEBEBE; /* Color de fondo */
+box-shadow: 0 0 10px rgba(0,0,0,0.6); /* Sombra sutil */
+}
+#pale{
+position: relative;
+width: 90%;
+height: 25%;
+top: 9%;
+left: 5%;
+border-radius: 10px;
+background-color: #BEBEBE; /* Color de fondo */
+box-shadow: 0 0 10px rgba(0,0,0,0.6); /* Sombra sutil */
+}
+#tripleta{
+    position: relative;
+width: 90%;
+height: 25%;
+top: 13%;
+left: 5%;
+border-radius: 10px;
+background-color: #BEBEBE; /* Color de fondo */
+box-shadow: 0 0 10px rgba(0,0,0,0.6); /* Sombra sutil */
+}
+#tabla{
+    position: fixed;
+top: 14%;
+right: 5%;
+width: 63%;
+height: 72%;
+background-color: #002f87;
+border-radius: 3%;
+padding: 10px; /* Espaciado interno */
+box-shadow: 0 0 10px rgba(0,0,0,0.9); /* Sombra sutil */
+}
+#videoPlayer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Inicialmente oculto */
+    object-fit: cover;
+}
+
+
+/* HISTORIAL */
+#historia{
+    position: fixed;
+    top: 2%;
+    left: 4%;
+    width: 24%;
+    height: 86%;
+background-color: #BEBEBE;
+border-radius: 3%;
+box-shadow: 0 0 10px rgba(60, 60, 60, 0.8); /* Sombra sutil */
+margin: 0;
+padding: 0;
+}
+
+#carrera{
+position: absolute;
+width: 90%;
+height: 12%;
+background-color: #f7f8fa;
+box-shadow: 0 0 10px rgba(60, 60, 60, 1.8); /* Sombra sutil */
+border-radius: 15px;
+left: 4%; 
+top: 2%;
+background-color: #e34352;
+text-align: center;
+}
+#id_carrera {
+    width: 100%; /* Ancho fijo para el elemento interno */
+    height: 100%; /* Altura fija para el elemento interno */
+    color: white; /* Color del texto blanco para el elemento interno */
+    text-align: center; /* Centra el texto horizontalmente */
+    justify-content: center;
+ font-size: 3rem;
+}
+
+#linea1,#linea2,#linea3,#linea4,#linea5,#linea6,#linea7,#linea8{
+    position: absolute;
+    width: 90%;
+    height: 7%;
+    background-color: #f7f8fa;
+    box-shadow: 0 0 10px rgba(60, 60, 60, 1.8); /* Sombra sutil */
+    border-radius: 15px;
+    left: 4%; 
+    text-align: center;
+}
+#tex_historia{
+    position: absolute;
+    width: 90%;
+    height: 7%;
+    top: 12%;
+    left: 4%;
+    background-color:transparent;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f7f8fa;
+}
+#l1,#l2,#l3,#l4,#l5,#l6,#l7,#l8{
+    position: absolute;
+    top: 4%;left: 2%;
+    font-size: 2rem;
+    color: #002f87;
+
+}
+
+#l1_1,#l2_1,#l3_1,#l4_1,#l5_1,#l6_1,#l7_1,#l8_1{
+    position: absolute;
+    top: 15%;left: 41%;
+   width: 10%; 
+   height: auto;
+}
+#l1_2,#l2_2,#l3_2,#l4_2,#l5_2,#l6_2,#l7_2,#l8_2{
+    position: absolute;
+    top: 15%;left: 55%;
+   width: 10%; 
+   height: auto;
+}
+#l1_3,#l2_3,#l3_3,#l4_3,#l5_3,#l6_3,#l7_3,#l8_3{
+    position: absolute;
+    top: 15%;left: 70%;
+   width: 10%; 
+   height: auto;
+}
+
+#linea1{ top: 23%;}
+#linea2{ top: 32%;}
+#linea3{ top: 41%;}
+#linea4{ top: 50%;}
+#linea5{ top: 59%;}
+#linea6{ top: 68%;}
+#linea7{ top: 77%;}
+#linea8{ top: 86%;}
+
+@media (min-width: 768px) {
+  
+}
+#ganadores.open {
+    transform: scaleX(1) scaleY(1);
+}
